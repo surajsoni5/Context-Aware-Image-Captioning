@@ -5,6 +5,7 @@ import torch.optim as optim
 from models import *
 from torch.nn.utils.rnn import pack_padded_sequence
 from tqdm import tqdm
+
 batch_size=64
 workers=0
 emb_dim = 512  # dimension of word embeddings
@@ -24,7 +25,7 @@ train_loader = torch.utils.data.DataLoader(\
         batch_size=batch_size, shuffle=True, num_workers=workers, pin_memory=True) #FIXME: Set shuffle true
         # Note that the resize is already done in the encoder, so no need to do it here again
 if load:
-	checkpoints=torch.load('checkpoint1')
+	checkpoints=torch.load('checkpoint_justify')
 	encoder=checkpoints['encoder']
 	decoder=checkpoints['decoder']
 	encoder_optimizer=checkpoints['encoder_optimizer']
@@ -38,7 +39,7 @@ if load:
 else:
 	epoch=0
 	encoder=Encoder()
-	decoder=DecoderWithAttention(attention_dim=attention_dim,embed_dim=emb_dim,decoder_dim=decoder_dim,vocab_size=5725+1)
+	decoder=DecoderWithAttention_justify(attention_dim=attention_dim,embed_dim=emb_dim,decoder_dim=decoder_dim,vocab_size=5725+1)
 	encoder_optimizer = torch.optim.Adam(params=filter(lambda p: p.requires_grad, encoder.parameters()),
 												lr=encoder_lr) if fine_tune_encoder else None
 	decoder_optimizer = torch.optim.Adam(params=filter(lambda p: p.requires_grad, decoder.parameters()),
@@ -53,38 +54,36 @@ criterion=criterion.to(device)
 decoder.train()
 encoder.train()
 for epoch in range(epoch,numepochs):
-	print('fafa')
 	if epoch%5==0 and epoch>0:
 		decoder_lr*=0.8
 		encoder_lr*=0.8
 		for param_group in decoder_optimizer.param_groups:
 			param_group['lr'] = decoder_lr
-	for i,(img,caption,caplen,class_) in enumerate(train_loader):
+	for i,(img,caption,caplen,class_k) in tqdm(enumerate(train_loader),desc="Batch"):
 		img=img.to(device)
 	#     print('fafa')
 		caption=caption.to(device)
 		caplen=caplen.to(device)
-		class_=class_.to(device)
+		class_k=class_k.to(device)
 		img = encoder(img)
-		scores, caps_sorted, decode_lengths, alphas, sort_ind = decoder(img, caption, caplen)
+		scores, caps_sorted, decode_lengths, alphas, sort_ind = decoder(img, caption, caplen,class_k)
 		targets = caps_sorted[:, 1:]
 
 		scores, _ = pack_padded_sequence(scores, decode_lengths, batch_first=True) #[32, 30, 5726] to [960, 5726]
 		targets, _ = pack_padded_sequence(targets, decode_lengths, batch_first=True) #[32, 30] to 9[60]
 		loss=criterion(scores,targets) # add gating scalar, to this loss
 		# Finetune encoder
-		print(loss)
+		# print(loss)
+		
 		decoder_optimizer.zero_grad()
 		if encoder_optimizer is not None:
 			encoder_optimizer.zero_grad()
-		
 		loss.backward()
-
 		#Clip gradinets
 		decoder_optimizer.step()
 		if encoder_optimizer is not None:
 			encoder_optimizer.step()
-			
+		tqdm.write(f"Loss {loss.detach().cpu().numpy()}")
 	state = {
 			'epoch': epoch,
 			'encoder': encoder,
@@ -92,9 +91,9 @@ for epoch in range(epoch,numepochs):
 			'encoder_optimizer': encoder_optimizer,
 			'decoder_optimizer': decoder_optimizer
 			}
-	filename = 'checkpoint'+'1'
+	filename = 'checkpoint_justify'
 	torch.save(state, filename)
-	
+    
 # Sets the evaluation mode
 decoder.eval()
 encoder.eval()
