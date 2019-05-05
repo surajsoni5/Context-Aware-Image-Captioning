@@ -28,7 +28,7 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 
 | Image| Target class  | distractor class  |  lambda |  Captoion |
 |---|---|---|---|---|
-|   |   |   |   |   |
+|![](Black_Footed_Albatross_0001_796111.jpg)  |  Greenfooted |   |   |   |
 |   |   |   |   |   |
 |   |   |   |   |   |
 
