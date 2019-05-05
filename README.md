@@ -23,5 +23,18 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 -  ***Attention*** 
     - We used adaptive pooling over encoder to get an `14*14*512` vector from the encoder, and then apply a linear layer with relu to get the attention weights. We used the soft version of attention. 
 
-We use Adam's optimizer, with learning rate of 0.002 which is annealed every 5 epochs. We use dropout with with `p=0.5` . The batch size used was 64, and the number of epochs were 100. GTX 1060.
+-  We use Adam's optimizer, with learning rate of 0.002 which is annealed every 5 epochs. We use dropout with with p = 0.5 . The batch size used was 64, and the number of epochs were 100. GTX 1060.
+
+
+
+
+
+
+
+![equation](http://latex.codecogs.com/gif.latexs%3D%5Ctext%20%7B%20sensor%20reading%20%7D) 
+
+
+
+
+
 <img src="https://latex.codecogs.com/png.latex?p=0.5" />
