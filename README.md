@@ -3,7 +3,7 @@
 ## Objective
 Produce pragmatic, context aware descriptions of images (captions  that  describe differences between images or visual concepts) using context agnositic data (captions that describe  a  concept  or  an  image  in  isolation). We attempt the following two problems.
 - ***Justification***:  
-    - Given an image, a target(ground-truth) class, and a distractor class, describe the target image to explain why it belongs to the target class, and not the distractor class.
+    - Given an image, a target (ground-truth) class, and a distractor class, describe the target image to explain why it belongs to the target class, and not the distractor class.
 - ***Discriminative image captioning***
     -  Given two similar images, produce a sentence to identify a target image from the distractor image.
 
