@@ -20,7 +20,7 @@ We use the CUB_2011 dataset which contains images of birds and their discription
     - We use a pretrained ResNet-34 already available in PyTorch's `torchvision`  module. Discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
 
 - ***Decoder:*** 
-  - We use am lstm with input embedding of 512 and hidden states of size 1800. For justification the class is embeded into a 512 size vector. 
+  - We use lstms with input embedding of 512 and hidden states of size 1800. For justification the class is embeded into a 512 size vector.   
 
 -  ***Attention*** 
     - We used adaptive pooling over encoder to get an `14*14*512` vector from the encoder, and then apply a linear layer with relu to get the attention weights. We used the soft version of attention. 
@@ -44,7 +44,7 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 
 
 ### Discussion 
-
+It can be seen that context aware captions gives more information about the image than context agnositic captions. 
 ### References 
 1. Paper: [Context-aware Captions from Context-agnostic Supervision](https://arxiv.org/pdf/1701.02870.pdf)
 2. Dataset:
