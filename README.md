@@ -1,7 +1,7 @@
 # Context-aware Captions from Context-agnostic Supervision
 
 ## Objective
-Produce pragmatic, context aware descriptions of images using context agnositic data. We attempt the following two problems.
+Produce pragmatic, context aware descriptions of images (captions  that  describe differences between images or visual concepts) using context agnositic data (captions that describe  a  concept  or  an  image  in  isolation). We attempt the following two problems.
 - ***Justification***:  
     - Given an image, a target(ground-truth) class, and a distractor class, describe the target image to explain why it belongs to the target class, and not the distractor class.
 - ***Discriminative image captioning***
