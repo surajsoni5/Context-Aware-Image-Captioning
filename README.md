@@ -14,7 +14,7 @@ We trained our model using generic **context-agnostic**  data (captions that des
 We use the CUB_2011 dataset which contains images of birds and their discriptions. The dataset has 200 bird classes (species), class has 30 images and each image has 10 discriptions. The discriptions are mostly about the morphology of birds, i.e.details about various parts of their body.
 
 [Insert bird labels diagramme]()
-
+ 
 ### Implementation details 
 - ***Encoder:*** 
     - We use a pretrained ResNet-34 already available in PyTorch's `torchvision`  module. Discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
