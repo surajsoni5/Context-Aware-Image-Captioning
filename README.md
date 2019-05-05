@@ -1,4 +1,4 @@
-# CV_Project
+# Context-aware Captions from Context-agnostic Supervision
 
 ## Objective
 Produce pragamtic, context aware discripions of images using context agnositic data. We attempt the following two problems.
