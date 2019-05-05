@@ -44,6 +44,10 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 ### Discussion 
 
 ### References 
+1. Paper: [Context-aware Captions from Context-agnostic Supervision](https://arxiv.org/pdf/1701.02870.pdf)
+2. Dataset:
+    - Images   : [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
+    - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
 
 ### Requirements and Dependencies
 ```
