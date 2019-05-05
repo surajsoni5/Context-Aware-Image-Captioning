@@ -25,6 +25,7 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 
 -  We use Adam's optimizer, with learning rate of 0.002 which is annealed every 5 epochs. We use dropout with with p = 0.5 . The batch size used was 64, and the number of epochs were 100. GTX 1060.
 
+### Results 
 
 | Image| Target class  | distractor class  |   Caption |
 |:---:|---|---|---|
@@ -35,18 +36,29 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 
 
 
-![](https://latex.codecogs.com/png.latex?p=0.5)
+<!-- ![](https://latex.codecogs.com/png.latex?p=0.5)
 
-<img src="https://latex.codecogs.com/png.latex?p=0.5" />
+<img src="https://latex.codecogs.com/png.latex?p=0.5" /> -->
 
-### Results 
 
 ### Discussion 
 
 ### References 
 
 ### Requirements and Dependencies
-
+```
+h5py          2.9.0   
+matplotlib    3.0.3   
+nltk          3.4.1     
+numpy         1.16.2  
+pandas        0.24.2  
+pillow        5.3.0     
+python        3.7.3   
+pytorch       1.0.0   
+torchfile     0.1.0   
+torchvision   0.2.1   
+tqdm          4.31.1  
+```
 ### Setup 
 
 ### Files and Folders 
