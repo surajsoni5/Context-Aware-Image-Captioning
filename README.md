@@ -8,7 +8,7 @@ Produce pragamtic, context aware discripions of images. We attempt the following
     -  Given two similar images, produce a sentence to identify a target image from the distractor image
 
 ### Approch
-We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), and use an infernce techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our models develops upon the arcthicture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
+We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), in a encoder-decoder paradym along with attention, and used an infernce techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our models develops upon the arcthicture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
 
 ### Dataset
 We use the CUB_2011 dataset which contains images of birds and their discriptions. The dataset has 200 classes , each class has 30 images and each image has 10 discriptions. 
