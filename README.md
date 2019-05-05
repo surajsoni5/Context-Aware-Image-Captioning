@@ -1,19 +1,21 @@
 # CV_Project
 
 ## Objective
-Produce pragamtic, context aware discripions of images. We attempt the following two problems.
+Produce pragamtic, context aware discripions of images using context agnositic data. We attempt the following two problems.
 - ***Justification***:  
     - Given an image, a target(ground-truth) class, and a distractor class, describe the target image to explain why it belongs to the target class, and not the distractor class.
 - ***Discriminative image captioning***
-    -  Given two similar images, produce a sentence to identify a target image from the distractor image
+    -  Given two similar images, produce a sentence to identify a target image from the distractor image.
 
 ### Approch
 We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), in a encoder-decoder paradym along with attention, and used an infernce techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our models develops upon the arcthicture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
 
 ### Dataset
-We use the CUB_2011 dataset which contains images of birds and their discriptions. The dataset has 200 classes , each class has 30 images and each image has 10 discriptions. 
+We use the CUB_2011 dataset which contains images of birds and their discriptions. The dataset has 200 bird classes (species), class has 30 images and each image has 10 discriptions. The discriptions are mostly about the morphology of birds, i.e.details about various parts of their body.
 
-### Implementation details
+[Insert bird labels diagramme]()
+
+### Implementation details 
 - ***Encoder:*** 
     - We use a pretrained ResNet-34 already available in PyTorch's `torchvision`  module. Discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
 
@@ -64,6 +66,7 @@ torchvision   0.2.1
 tqdm          4.31.1  
 ```
 ### Setup 
+To train pure imsgr
 
 ### Files and Folders 
 
