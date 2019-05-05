@@ -47,7 +47,19 @@ We use the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.h
 
 
 ## Requirements and Dependencies
-
+```
+h5py          2.9.0   
+matplotlib    3.0.3   
+nltk          3.4.1     
+numpy         1.16.2  
+pandas        0.24.2  
+pillow        5.3.0     
+python        3.7.3   
+pytorch       1.0.0   
+torchfile     0.1.0   
+torchvision   0.2.1   
+tqdm          4.31.1  
+```
 ## Setup 
 
 ## Files and Folders 
