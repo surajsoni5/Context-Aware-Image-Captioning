@@ -26,7 +26,7 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 -  We use Adam's optimizer, with learning rate of 0.002 which is annealed every 5 epochs. We use dropout with with p = 0.5 . The batch size used was 64, and the number of epochs were 100. GTX 1060.
 
 
-| Image| Target class  | distractor class  |   Captoion |
+| Image| Target class  | distractor class  |   Caption |
 |:---:|---|---|---|
 |![](Black_Footed_Albatross_0001_796111.jpg)  |  ![](Capture.PNG) |![](Capture.PNG)   | Fafafafa jkbjbe bhbadhf bjdBHBHJA   | 
 |   |   |   |   |   
@@ -38,3 +38,16 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 ![](https://latex.codecogs.com/png.latex?p=0.5)
 
 <img src="https://latex.codecogs.com/png.latex?p=0.5" />
+
+### Results 
+
+### Discussion 
+
+### References 
+
+### Requirements and Dependencies
+
+### Setup 
+
+### Files and Folders 
+
