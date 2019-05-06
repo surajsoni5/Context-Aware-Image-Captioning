@@ -34,7 +34,7 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 ### Context Agnostic Captioning 
 | Image| Context Agnostic Caption |
 |:---:|:---:|
-| Pied Kingfisher <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=200 height=175>   | this bird has a white belly and breast with black superciliary and crown |
+| Pied Kingfisher <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=200 height=175 align="bottom">   | this bird has a white belly and breast with black superciliary and crown |
 | Laysan Albatross <img src="result_images/images_caption/Laysan_Albatross_0049_918.jpg" width=200 height=175>   | this bird has a white head and breast with grey wings and a yellow beak |
 | Common Yellowthroat <img src="result_images/images_caption/Common_Yellowthroat_0015_190556.jpg" width=200 height=175>   | this bird has a yellow belly and breast with a black superciliary and gray crown |
 | Red Legged Kittiwake <img src="result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg" width=200 height=175>   | this bird has a white crown a white breast and grey wings with black edges |
