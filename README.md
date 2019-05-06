@@ -10,6 +10,10 @@ Produce pragmatic, context aware descriptions of images (captions  that  describ
 ## Approach
 We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), in an encoder-decoder paradigm along with attention, and used an inference techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our model develops upon the architecture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
 
+<p align="center">
+    <img src="result_images/es.png" alt="Image" width="400" height="300" />
+</p>
+
 ## Dataset
 We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) dataset which contains images of birds and their descriptions. The dataset has 200 bird classes (species), each class has 30 images and each image has 10 descriptions. The descriptions are mostly about the morphology of the birds i.e., details about various parts of their body.
 
@@ -113,7 +117,7 @@ python train.py
 python train_justify.py
 ```
 #### Testing
-Download the pretrained models [checkpoint_d](https://drive.google.com/open?id=1w4zF82hgbPmU9hAHsY92myjOU6HYD_BI) and [checkpoint_d](https://drive.google.com/open?id=1QLyqU5HZHYAyRJTSsIBPqG8zARU0oZUL)
+Download the pretrained models [checkpoint_d](https://drive.google.com/open?id=1w4zF82hgbPmU9hAHsY92myjOU6HYD_BI) and [checkpoint_j](https://drive.google.com/open?id=1QLyqU5HZHYAyRJTSsIBPqG8zARU0oZUL)
 1) Context agnostic captioning: 
 ` python beamsearch.py c image_path`
 2) Justification:
