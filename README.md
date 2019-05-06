@@ -60,7 +60,8 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 |<img src="result_images/images_justify/images/182_Yellow_Warbler_0016_176452.jpg" width=225 height=200>   |   <img src="result_images/images_justify/classes/182.jpg" width=300 height=250>  |<img src="result_images/images_justify/classes/159.jpg" width=300 height=250>    | this bird has a yellow crown a short bill and a yellow breast | 
 |<img src="result_images/images_justify/images/144_Common_Tern_0009_149609.jpg" width=225 height=200>   |   <img src="result_images/images_justify/classes/144.jpg" width=300 height=250>  |<img src="result_images/images_justify/classes/142.jpg" width=300 height=250>    | this bird has a black crown white primaries and a white belly | 
 
-### Discriminative Captioning | Target Image | Distractor Image | Caption | Context Agnostic Caption |
+### Discriminative Captioning 
+| Target Image | Distractor Image | Caption | Context Agnostic Caption |
 |:--:|:--:|:--:|:--:|
 | <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0032_796115.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0047_619.jpg" width=175 height=175>  | this bird is brown in color over all of its body except for its wings and tail that have white around them |  this bird has wings that are brown and has a long bill |
 | <img src="result_images/images_desc/image_target/Sooty_Albatross_0054_796347.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0040_472.jpg" width=175 height=175>  | this bird has wings that are gray and has a black tail and a black bill | this bird has a white head and breast with grey wings and a long curved beak |
