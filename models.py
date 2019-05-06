@@ -21,7 +21,7 @@ class Encoder(nn.Module):
         out = out.permute(0,2,3,1) # Batch* d*e*e to batch*e*e*d, helps in attention
         return out
 
-class Attention(nn.Module): 
+class Attention(nn.Module):  
     def __init__(self, encoder_dim, decoder_dim, attention_dim):
         super(Attention, self).__init__()
         self.encoder_att = nn.Linear(encoder_dim, attention_dim)  

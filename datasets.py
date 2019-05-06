@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import Dataset
 import h5py
 import numpy as np
-
+  
 class CaptionDataset(Dataset):
     def __init__(self, transform):
         self.h = h5py.File('dataset.hdf5','r',driver='core')
@@ -14,7 +14,7 @@ class CaptionDataset(Dataset):
         self.captions= np.array(self.h['captions'])
         self.class_k =np.array(self.h['class'])
         self.maxcapslen=30+3 
-        self.numcaptions=self.h['numcaptions'].value
+        self.numcaptions=self.h['numcaptions'].value 
         self.transform=transform
 
     def __getitem__(self, i):

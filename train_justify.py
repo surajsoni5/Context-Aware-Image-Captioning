@@ -14,7 +14,7 @@ decoder_dim = 1800  # dimension of decoder RNN
 dropout = 0.5 # Dropout rate
 decoder_lr = 2*1e-3 # Decoder learning rate
 numepochs=100 # Number of epochs
-load=False ## Make this false when you don't want load a checkpoint
+load=False ## Make this false when you don't want load a checkpoint 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

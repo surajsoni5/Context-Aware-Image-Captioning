@@ -7,7 +7,7 @@ import numpy as np
 import torchfile as tf
 from PIL import Image
 from matplotlib.pyplot import imshow
-import sys
+import sys    
 cub_dataset    = sys.argv[1] #'C:/Users/hello/Desktop/Accads/CUB_200_2011/' # Location of cub dataset 
 captions_dataset= sys.argv[2] # 'C:/Users/hello/Desktop/Accads/cvpr2016_cub/word_c10/' # Location of captions dataset
 VocabSize=5725+1 # Starts from 1 and ends at 5725, include start token also

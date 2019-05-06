@@ -417,7 +417,7 @@ if __name__ == "__main__":
     elif sys.argv[1]=="cj": ## cj Image_path target_class distractor class
         checkpoints=torch.load('checkpoint_j')
         encoder=checkpoints['encoder']
-        decoder=checkpoints['decoder']
+        decoder=checkpoints['decoder'] 
         encoder.eval()
         decoder.eval()
         image_path=sys.argv[2]

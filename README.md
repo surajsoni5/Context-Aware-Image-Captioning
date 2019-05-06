@@ -109,7 +109,7 @@ You can install these dependencies using `pip install -r requirements.txt`
 ```
 python datapreprocess.py \path\to\data\set \path\to\vocab\
 python train.py
-python train_justify.py
+python train_justify.py 
 ```
 #### Testing
 Download the pretrained models [checkpoint_d](https://drive.google.com/open?id=1w4zF82hgbPmU9hAHsY92myjOU6HYD_BI) and [checkpoint_j](https://drive.google.com/open?id=1QLyqU5HZHYAyRJTSsIBPqG8zARU0oZUL)
