@@ -111,13 +111,12 @@ python datapreprocess.py \path\to\data\set \path\to\vocab\
 python train.py
 python train_justify.py
 ```
-#### Training
-Testing:
-1) Context agnostic captioning 
+#### Testing
+1) Context agnostic captioning: 
 ` python beamsearch.py c image_path`
-2) Justification
+2) Justification:
 ` python beamsearch.py cj target_image_path target_class_path distractor_class_path `
-3) Discrimination
+3) Discrimination:
 ` python beamsearch.py cd target_image_path distractor_image_path `
 
 ## Files and Folders 
