@@ -112,6 +112,7 @@ python train.py
 python train_justify.py
 ```
 #### Testing
+Download the pretrained models ![checkpoint_d](https://drive.google.com/open?id=1w4zF82hgbPmU9hAHsY92myjOU6HYD_BI) and ![checkpoint_d](https://drive.google.com/open?id=1QLyqU5HZHYAyRJTSsIBPqG8zARU0oZUL)
 1) Context agnostic captioning: 
 ` python beamsearch.py c image_path`
 2) Justification:
