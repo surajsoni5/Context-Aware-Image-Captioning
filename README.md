@@ -85,12 +85,6 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 
 <!-- ## Discussion 
 It can be seen that context aware captions gives more information about the image than context agnositic captions.  -->
-## References 
-1. Paper: [Context-aware Captions from Context-agnostic Supervision](https://arxiv.org/pdf/1701.02870.pdf)
-2. Dataset:
-    - Images   : [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
-    - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
-3. A beautiful tutorial on [Show, Attend and Tell Implementation](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
 
 ## Requirements
 
@@ -128,3 +122,9 @@ Download the pretrained models [checkpoint_d](https://drive.google.com/open?id=1
 
 <!-- ## Files and Folders  -->
 
+## References 
+1. Paper: [Context-aware Captions from Context-agnostic Supervision](https://arxiv.org/pdf/1701.02870.pdf)
+2. Dataset:
+    - Images   : [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
+    - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
+3. A beautiful tutorial on [Show, Attend and Tell Implementation](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
