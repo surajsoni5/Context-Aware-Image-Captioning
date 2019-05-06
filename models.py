@@ -97,7 +97,6 @@ class DecoderWithAttention(nn.Module):
 
         # Create tensors to hold word predicion scores and alphas
         predictions = torch.zeros(batch_size, max(decode_lengths), vocab_size).to(device) #FIXME: Think about this
-        # alphas = torch.zeros(batch_size, max(decode_lengths), num_pixels).to(device)
 
         for t in range(max(decode_lengths)):
             batch_size_t = sum([l > t for l in decode_lengths])
@@ -110,7 +109,6 @@ class DecoderWithAttention(nn.Module):
                 (h[:batch_size_t], c[:batch_size_t]))  # (batch_size_t, decoder_dim)
             preds = self.fc(self.dropout(h))  # (batch_size_t, vocab_size)
             predictions[:batch_size_t, t, :] = preds
-            # alphas[:batch_size_t, t, :] = alpha
 
         return predictions, encoded_captions, decode_lengths, sort_ind
 
@@ -179,8 +177,7 @@ class DecoderWithAttention_justify(nn.Module):
         decode_lengths = (caption_lengths - 1).tolist()
 
         # Create tensors to hold word predicion scores and alphas
-        predictions = torch.zeros(batch_size, max(decode_lengths), vocab_size).to(device) #FIXME: Think about this
-        # alphas = torch.zeros(batch_size, max(decode_lengths), num_pixels).to(device)
+        predictions = torch.zeros(batch_size, max(decode_lengths), vocab_size).to(device) 
 
         for t in range(max(decode_lengths)):
             batch_size_t = sum([l > t for l in decode_lengths])
@@ -192,6 +189,5 @@ class DecoderWithAttention_justify(nn.Module):
                 (h[:batch_size_t], c[:batch_size_t]))  # (batch_size_t, decoder_dim)
             preds = self.fc(self.dropout(h))  # (batch_size_t, vocab_size)
             predictions[:batch_size_t, t, :] = preds
-            # alphas[:batch_size_t, t, :] = alpha
 
         return predictions, encoded_captions, decode_lengths, sort_ind

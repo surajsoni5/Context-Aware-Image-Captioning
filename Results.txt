@@ -78,37 +78,57 @@ b = 5
 .\images\001.Black_footed_Albatross\Black_Footed_Albatross_0032_796115.jpg .\images\002.Laysan_Albatross\Laysan_Albatross_0047_619.jpg
 this bird is brown in color over the entire body crown and secondaries with tan colored bill <END>
 
+
 L = 0.5
 b = 3
 this bird is brown in color over all of its body except for its wings and tail that have white around them <END>
+
+this bird has wings that are brown and has a long bill <END>
+
 ---------------------------------------------------------------------------------------------------------------------------
 L = 0.5
 b = 3
 .\images\003.Sooty_Albatross\Sooty_Albatross_0054_796347.jpg .\images\002.Laysan_Albatross\Laysan_Albatross_0040_472.jpg
 this bird has wings that are gray and has a black tail and a black bill <END>
+
+this bird has a white head and breast with grey wings and a long curved beak <END>
 ---------------------------------------------------------------------------------------------------------------------------
 L = 0.5
 b = 3
 .\images\001.Black_footed_Albatross\Black_Footed_Albatross_0038_212.jpg  .\images\002.Laysan_Albatross\Laysan_Albatross_0058_637.jpg
 this bird has a brown crown brown primaries and a brown throat <END>
+
+this bird has a white crown as well as a long black bill <END>
 ---------------------------------------------------------------------------------------------------------------------------
 .\images\005.Crested_Auklet\Crested_Auklet_0010_794907.jpg  .\images\006.Least_Auklet\Least_Auklet_0014_1901.jpg
 this bird has webbed feet with a bright orange wide beak and jet black over the rest of its body <END>
+
+this bird has a white belly and breast with a short orange bill <END>
 ---------------------------------------------------------------------------------------------------------------------------
 .\images\010.Red_winged_Blackbird\Red_Winged_Blackbird_0024_4180.jpg .\images\009.Brewer_Blackbird\Brewer_Blackbird_0064_2290.jpg
 this bird has blackhead and body but there is fins of feathers off of the wing that are black white and red <END>
+
+this bird has wings that are black and has red patches on them <END>
 ---------------------------------------------------------------------------------------------------------------------------
 .\images\015.Lazuli_Bunting\Lazuli_Bunting_0030_14986.jpg .\images\014.Indigo_Bunting\Indigo_Bunting_0036_13716.jpg
 this bird has a white belly brown breast blue head and white wingbars <END>
+
+this bird has a blue crown a short black bill and a rounded white breast <END>
 ---------------------------------------------------------------------------------------------------------------------------
 .\images\031.Black_billed_Cuckoo\Black_Billed_Cuckoo_0037_795330.jpg .\images\033.Yellow_billed_Cuckoo\Yellow_Billed_Cuckoo_0018_26535.jpg
 a small brown bird with a white throat and red eyerings <END>
+
+this bird has a white belly and breast with a brown crown and wing <END>
 ---------------------------------------------------------------------------------------------------------------------------
 .\images\043.Yellow_bellied_Flycatcher\Yellow_Bellied_Flycatcher_0017_795490.jpg .\images\041.Scissor_tailed_Flycatcher\Scissor_Tailed_Flycatcher_0013_42024.jpg
 a small green bird with a yellow breast and yellow bill <END>
+
+this bird has a yellow belly and breast with a short pointy bill <END>
 ---------------------------------------------------------------------------------------------------------------------------
 .\images\073.Blue_Jay\Blue_Jay_0080_61617.jpg  .\images\074.Florida_Jay\Florida_Jay_0009_64723.jpg
 this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices <END>
+
+this bird has a white belly and breast with a blue crown and wing <END>
 ---------------------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------------------
