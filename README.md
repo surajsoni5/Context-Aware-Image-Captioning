@@ -34,16 +34,16 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 ### Context Agnostic Captioning 
 | Image| Context Agnostic Caption |
 |:---:|:---:|
-| <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=200 height=175>   | this bird has a white belly and breast with black superciliary and crown |
-| <img src="result_images/images_caption/Laysan_Albatross_0049_918.jpg" width=200 height=175>   | this bird has a white head and breast with grey wings and a yellow beak |
-| <img src="result_images/images_caption/Common_Yellowthroat_0015_190556.jpg" width=200 height=175>   | this bird has a yellow belly and breast with a black superciliary and gray crown |
-| <img src="result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg" width=200 height=175>   | this bird has a white crown a white breast and grey wings with black edges |
-| <img src="result_images/images_caption/Purple_Finch_0117_27427.jpg" width=200 height=175>   | this bird has a red crown a short bill and a red breast |
-| <img src="result_images/images_caption/Pelagic_Cormorant_0012_23565.jpg" width=200 height=175>   | this bird has a long neck and a long bill |
-| <img src="result_images/images_caption/Pied_Kingfisher_0004_72135.jpg" width=200 height=175>   | this bird has a long black bill and a black and white spotted body |
-| <img src="result_images/images_caption/Long_Tailed_Jaeger_0005_797062.jpg" width=200 height=175>   | this bird has a black crown a white breast and a large wingspan |
-| <img src="result_images/images_caption/Western_Grebe_0007_36074.jpg" width=200 height=175>   | this bird has a long yellow bill a black crown and red eyes |
-| <img src="result_images/images_caption/Brewer_Sparrow_0008_796703.jpg" width=200 height=175>   | this bird has a white belly and breast with a brown crown and white wingbars |
+| Pied Kingfisher <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=200 height=175 align="bottom">   | this bird has a white belly and breast with black superciliary and crown |
+| Laysan Albatross <img src="result_images/images_caption/Laysan_Albatross_0049_918.jpg" width=200 height=175>   | this bird has a white head and breast with grey wings and a yellow beak |
+| Common Yellowthroat <img src="result_images/images_caption/Common_Yellowthroat_0015_190556.jpg" width=200 height=175>   | this bird has a yellow belly and breast with a black superciliary and gray crown |
+| Red Legged Kittiwake <img src="result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg" width=200 height=175>   | this bird has a white crown a white breast and grey wings with black edges |
+| Purple Finch <img src="result_images/images_caption/Purple_Finch_0117_27427.jpg" width=200 height=175>   | this bird has a red crown a short bill and a red breast |
+| Pelagic Cormorant <img src="result_images/images_caption/Pelagic_Cormorant_0012_23565.jpg" width=200 height=175>   | this bird has a long neck and a long bill |
+| Pied Kingfisher <img src="result_images/images_caption/Pied_Kingfisher_0004_72135.jpg" width=200 height=175>   | this bird has a long black bill and a black and white spotted body |
+| Long Tailed Jaeger <img src="result_images/images_caption/Long_Tailed_Jaeger_0005_797062.jpg" width=200 height=175>   | this bird has a black crown a white breast and a large wingspan |
+| Western Grebe <img src="result_images/images_caption/Western_Grebe_0007_36074.jpg" width=200 height=175>   | this bird has a long yellow bill a black crown and red eyes |
+| Brewer Sparrow <img src="result_images/images_caption/Brewer_Sparrow_0008_796703.jpg" width=200 height=175>   | this bird has a white belly and breast with a brown crown and white wingbars |
 
 ### Justification Captioning 
 
@@ -61,23 +61,17 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 |<img src="result_images/images_justify/images/144_Common_Tern_0009_149609.jpg" width=225 height=200>   |   <img src="result_images/images_justify/classes/144.jpg" width=300 height=250>  |<img src="result_images/images_justify/classes/142.jpg" width=300 height=250>    | this bird has a black crown white primaries and a white belly | 
 
 ### Discriminative Captioning 
-
-| Target Image | Distractor Image | Caption | Context Agnostic Caption |
-|:--:|:--:|:--:|:--:|
-| <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0032_796115.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0047_619.jpg" width=175 height=175>  | this bird is brown in color over all of its body except for its wings and tail that have white around them | |
-| <img src="result_images/images_desc/image_target/Sooty_Albatross_0054_796347.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0040_472.jpg" width=175 height=175>  | this bird has wings that are gray and has a black tail and a black bill | |
-| <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0038_212.jpg" width=175 height=175>   | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0058_637.jpg" width=175 height=175>  | this bird has a brown crown brown primaries and a brown throat | |
-| <img src="result_images/images_desc/image_target/Crested_Auklet_0010_794907.jpg" width=175 height=175>   | <img src="result_images/images_desc/image_distractor/Least_Auklet_0014_1901.jpg" width=175 height=175>  | this bird has webbed feet with a bright orange wide beak and jet black over the rest of its body | |
-| <img src="result_images/images_desc/image_target/Red_Winged_Blackbird_0024_4180.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Brewer_Blackbird_0064_2290.jpg" width=175 height=175>  | this bird has blackhead and body but there is fins of feathers off of the wing that are black white and red | |
-| <img src="result_images/images_desc/image_target/Lazuli_Bunting_0030_14986.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Indigo_Bunting_0036_13716.jpg" width=175 height=175>  | this bird has a white belly brown breast blue head and white wingbars | |
-| <img src="result_images/images_desc/image_target/Black_Billed_Cuckoo_0037_795330.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Yellow_Billed_Cuckoo_0018_26535.jpg" width=175 height=175>  | a small brown bird with a white throat and red eyerings | |
-| <img src="result_images/images_desc/image_target/Yellow_Bellied_Flycatcher_0017_795490.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Scissor_Tailed_Flycatcher_0013_42024.jpg" width=175 height=175>  | a small green bird with a yellow breast and yellow bill | |
-| <img src="result_images/images_desc/image_target/Blue_Jay_0080_61617.jpg" width=175 height=175> |  <img src="result_images/images_desc/image_distractor/Florida_Jay_0009_64723.jpg" width=175 height=175>  | this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices | |
-
-
-
-
-
+| Target Image | Distractor Image | Caption | 
+|:--:|:--:|:--:|
+| <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0032_796115.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0047_619.jpg" width=175 height=175>  | this bird is brown in color over all of its body except for its wings and tail that have white around them | 
+| <img src="result_images/images_desc/image_target/Sooty_Albatross_0054_796347.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0040_472.jpg" width=175 height=175>  | this bird has wings that are gray and has a black tail and a black bill | 
+| <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0038_212.jpg" width=175 height=175>   | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0058_637.jpg" width=175 height=175>  | this bird has a brown crown brown primaries and a brown throat | 
+| <img src="result_images/images_desc/image_target/Crested_Auklet_0010_794907.jpg" width=175 height=175>   | <img src="result_images/images_desc/image_distractor/Least_Auklet_0014_1901.jpg" width=175 height=175>  | this bird has webbed feet with a bright orange wide beak and jet black over the rest of its body | 
+| <img src="result_images/images_desc/image_target/Red_Winged_Blackbird_0024_4180.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Brewer_Blackbird_0064_2290.jpg" width=175 height=175>  | this bird has blackhead and body but there is fins of feathers off of the wing that are black white and red | 
+| <img src="result_images/images_desc/image_target/Lazuli_Bunting_0030_14986.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Indigo_Bunting_0036_13716.jpg" width=175 height=175>  | this bird has a white belly brown breast blue head and white wingbars | 
+| <img src="result_images/images_desc/image_target/Black_Billed_Cuckoo_0037_795330.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Yellow_Billed_Cuckoo_0018_26535.jpg" width=175 height=175>  | a small brown bird with a white throat and red eyerings | 
+| <img src="result_images/images_desc/image_target/Yellow_Bellied_Flycatcher_0017_795490.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Scissor_Tailed_Flycatcher_0013_42024.jpg" width=175 height=175>  | a small green bird with a yellow breast and yellow bill | 
+| <img src="result_images/images_desc/image_target/Blue_Jay_0080_61617.jpg" width=175 height=175> |  <img src="result_images/images_desc/image_distractor/Florida_Jay_0009_64723.jpg" width=175 height=175>  | this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices | 
 
 <!-- ![](https://latex.codecogs.com/png.latex?p=0.5)
 
@@ -92,20 +86,24 @@ It can be seen that context aware captions gives more information about the imag
     - Images   : [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
     - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
 
-## Requirements and Dependencies
+## Requirements
+
+Kindly use the requirements.txt to set up your machine for replicating this project, some dependencies are :
 ```
-h5py          2.9.0   
-matplotlib    3.0.3   
-nltk          3.4.1     
-numpy         1.16.2  
-pandas        0.24.2  
-pillow        5.3.0     
-python        3.7.3   
-pytorch       1.0.0   
-torchfile     0.1.0   
-torchvision   0.2.1   
-tqdm          4.31.1  
+h5py==2.9.0   
+matplotlib==3.0.3   
+nltk==3.4.1     
+numpy==1.16.2  
+pandas==0.24.2  
+pillow==5.3.0     
+python==3.7.3   
+pytorch==1.0.0   
+torchfile==0.1.0   
+torchvision==0.2.1   
+tqdm==4.31.1  
 ```
+You can install these dependencies using `pip install -r requirements.txt`
+
 ## Setup 
 #### Training
 ```
