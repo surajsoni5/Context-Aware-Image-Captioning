@@ -1,31 +1,35 @@
-# CV_Project
+# Context-aware Captions from Context-agnostic Supervision
 
 ## Objective
-Produce pragamtic, context aware discripions of images. We attempt the following two problems.
+Produce pragmatic, context aware descriptions of images (captions  that  describe differences between images or visual concepts) using context agnositic data (captions that describe  a  concept  or  an  image  in  isolation). We attempt the following two problems.
 - ***Justification***:  
-    - Given an image, a target(ground-truth) class, and a distractor class, describe the target image to explain why it belongs to the target class, and not the distractor class.
+    - Given an image, a target (ground-truth) class, and a distractor class, describe the target image to explain why it belongs to the target class, and not the distractor class.
 - ***Discriminative image captioning***
-    -  Given two similar images, produce a sentence to identify a target image from the distractor image
+    -  Given two similar images, produce a sentence to identify a target image from the distractor image.
 
-### Approch
-We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), in a encoder-decoder paradym along with attention, and used an infernce techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our models develops upon the arcthicture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
+## Approach
+We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), in an encoder-decoder paradigm along with attention, and used an inference techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our model develops upon the architecture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
 
-### Dataset
-We use the CUB_2011 dataset which contains images of birds and their discriptions. The dataset has 200 classes , each class has 30 images and each image has 10 discriptions. 
+## Dataset
+We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) dataset which contains images of birds and their descriptions. The dataset has 200 bird classes (species), each class has 30 images and each image has 10 descriptions. The descriptions are mostly about the morphology of the birds i.e., details about various parts of their body.
 
-### Implementation details
-- ***Encoder:*** 
-    - We use a pretrained ResNet-34 already available in PyTorch's `torchvision`  module. Discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
+<p align="center">
+    <img src="birdlables.png" alt="Image" width="400" height="300" />
+</p>
+ 
+## Implementation details 
+- ***Encoder*** 
+    - We used a pretrained `ResNet-34` already available in the PyTorch's `torchvision`  module and discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
 
-- ***Decoder:*** 
-  - We use am lstm with input embedding of 512 and hidden states of size 1800. For justification the class is embeded into a 512 size vector. 
+- ***Decoder*** 
+  - We used LSTM's with `input embedding of size 512` and `hidden states of size 1800`. For justification the class is embeded into a `512 size vector`.   
 
 -  ***Attention*** 
-    - We used adaptive pooling over encoder to get an `14*14*512` vector from the encoder, and then apply a linear layer with relu to get the attention weights. We used the soft version of attention. 
+    - We used adaptive pooling over encoder to get a `14*14*512` vector from the encoder and then applied a linear layer with ReLu activation to get the attention weights. Note that we used the soft version of the attention. 
 
--  We use Adam's optimizer, with learning rate of 0.002 which is annealed every 5 epochs. We use dropout with with p = 0.5 . The batch size used was 64, and the number of epochs were 100. GTX 1060.
+-  We used Adam's optimizer with `learning rate of 0.002` which is annealed every 5 epochs. We used dropout with `p = 0.5`. The `batch size used was 64` and the `number of epochs were 100`. The model was trained on GTX 1060 for 15 hours.
 
-### Results 
+## Results 
 
 | Image| Target class  | distractor class  |   Caption |
 |:---:|---|---|---|
@@ -41,15 +45,15 @@ We use the CUB_2011 dataset which contains images of birds and their discription
 <img src="https://latex.codecogs.com/png.latex?p=0.5" /> -->
 
 
-### Discussion 
-
-### References 
+## Discussion 
+It can be seen that context aware captions gives more information about the image than context agnositic captions. 
+## References 
 1. Paper: [Context-aware Captions from Context-agnostic Supervision](https://arxiv.org/pdf/1701.02870.pdf)
 2. Dataset:
     - Images   : [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
     - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
 
-### Requirements and Dependencies
+## Requirements and Dependencies
 ```
 h5py          2.9.0   
 matplotlib    3.0.3   
@@ -63,7 +67,8 @@ torchfile     0.1.0
 torchvision   0.2.1   
 tqdm          4.31.1  
 ```
-### Setup 
+## Setup 
+To train pure imsgr
 
-### Files and Folders 
+## Files and Folders 
 
