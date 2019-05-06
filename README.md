@@ -32,19 +32,18 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 ## Results 
 
 ### Context Agnostic Captioning 
-
 | Image| Context Agnostic Caption |
 |:---:|:---:|
-| <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=350 height=350>   | this bird has a white belly and breast with black superciliary and crown |
-| <img src="result_images/images_caption/Laysan_Albatross_0049_918.jpg" width=350 height=350>   | this bird has a white head and breast with grey wings and a yellow beak |
-| <img src="result_images/images_caption/Common_Yellowthroat_0015_190556.jpg" width=350 height=350>   | this bird has a yellow belly and breast with a black superciliary and gray crown |
-| <img src="result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg" width=350 height=350>   | this bird has a white crown a white breast and grey wings with black edges |
-| <img src="result_images/images_caption/Purple_Finch_0117_27427.jpg" width=350 height=350>   | this bird has a red crown a short bill and a red breast |
-| <img src="result_images/images_caption/Pelagic_Cormorant_0012_23565.jpg" width=350 height=350>   | this bird has a long neck and a long bill |
-| <img src="result_images/images_caption/Pied_Kingfisher_0004_72135.jpg" width=350 height=350>   | this bird has a long black bill and a black and white spotted body |
-| <img src="result_images/images_caption/Long_Tailed_Jaeger_0005_797062.jpg" width=350 height=350>   | this bird has a black crown a white breast and a large wingspan |
-| <img src="result_images/images_caption/Western_Grebe_0007_36074.jpg" width=350 height=350>   | this bird has a long yellow bill a black crown and red eyes |
-| <img src="result_images/images_caption/Brewer_Sparrow_0008_796703.jpg" width=350 height=350>   | this bird has a white belly and breast with a brown crown and white wingbars |
+| <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=300 height=300>   | this bird has a white belly and breast with black superciliary and crown |
+| <img src="result_images/images_caption/Laysan_Albatross_0049_918.jpg" width=300 height=300>   | this bird has a white head and breast with grey wings and a yellow beak |
+| <img src="result_images/images_caption/Common_Yellowthroat_0015_190556.jpg" width=300 height=300>   | this bird has a yellow belly and breast with a black superciliary and gray crown |
+| <img src="result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg" width=300 height=300>   | this bird has a white crown a white breast and grey wings with black edges |
+| <img src="result_images/images_caption/Purple_Finch_0117_27427.jpg" width=300 height=300>   | this bird has a red crown a short bill and a red breast |
+| <img src="result_images/images_caption/Pelagic_Cormorant_0012_23565.jpg" width=300 height=300>   | this bird has a long neck and a long bill |
+| <img src="result_images/images_caption/Pied_Kingfisher_0004_72135.jpg" width=300 height=300>   | this bird has a long black bill and a black and white spotted body |
+| <img src="result_images/images_caption/Long_Tailed_Jaeger_0005_797062.jpg" width=300 height=300>   | this bird has a black crown a white breast and a large wingspan |
+| <img src="result_images/images_caption/Western_Grebe_0007_36074.jpg" width=300 height=300>   | this bird has a long yellow bill a black crown and red eyes |
+| <img src="result_images/images_caption/Brewer_Sparrow_0008_796703.jpg" width=300 height=300>   | this bird has a white belly and breast with a brown crown and white wingbars |
 
 ### Justification Captioning 
 
@@ -73,7 +72,7 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 | <img src="result_images/images_desc/image_target/Lazuli_Bunting_0030_14986.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Indigo_Bunting_0036_13716.jpg" width=350 height=350>  | this bird has a white belly brown breast blue head and white wingbars | |
 | <img src="result_images/images_desc/image_target/Black_Billed_Cuckoo_0037_795330.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Yellow_Billed_Cuckoo_0018_26535.jpg" width=350 height=350>  | a small brown bird with a white throat and red eyerings | |
 | <img src="result_images/images_desc/image_target/Yellow_Bellied_Flycatcher_0017_795490.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Scissor_Tailed_Flycatcher_0013_42024.jpg" width=350 height=350>  | a small green bird with a yellow breast and yellow bill | |
-| <img src=" result_images/images_desc/image_target/Blue_Jay_0080_61617.jpg" width=350 height=350> |  <img src="result_images/images_desc/image_distractor/Florida_Jay_0009_64723.jpg" width=350 height=350>  | this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices | |
+| <img src="result_images/images_desc/image_target/Blue_Jay_0080_61617.jpg" width=350 height=350> |  <img src="result_images/images_desc/image_distractor/Florida_Jay_0009_64723.jpg" width=350 height=350>  | this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices | |
 
 
 
