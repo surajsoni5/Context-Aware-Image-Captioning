@@ -9,9 +9,10 @@ Produce pragmatic, context aware descriptions of images (captions  that  describ
 
 ## Approach
 We trained our model using generic **context-agnostic**  data (captions that describe a concept or an image in isolation), in an encoder-decoder paradigm along with attention, and used an inference techiqiue called **Emitter-Suppressor  Beam Search** to produce context aware image captions. Our model develops upon the architecture of [Show attend and tell](https://arxiv.org/pdf/1502.03044.pdf). For justification, apart from the image, the decoder is also conditioned on target-class. 
-
+####Emitter-Suppressor Beam Search Algorithm
 <p align="center">
     <img src="result_images/es.png" alt="Image" width="400" height="300" />
+
 </p>
 
 ## Dataset
