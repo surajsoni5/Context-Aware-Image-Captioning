@@ -19,15 +19,15 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
  
 ## Implementation details 
 - ***Encoder*** 
-    - We used a pretrained ResNet-34 already available in the PyTorch's `torchvision`  module and discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
+    - We used a pretrained `ResNet-34` already available in the PyTorch's `torchvision`  module and discarded the last two layers (pooling and linear layers), since we only need to encode the image, and not classify it.
 
 - ***Decoder*** 
-  - We used LSTM's with input embedding of 512 and hidden states of size 1800. For justification the class is embeded into a 512 size vector.   
+  - We used LSTM's with `input embedding of size 512` and `hidden states of size 1800`. For justification the class is embeded into a `512 size vector`.   
 
 -  ***Attention*** 
     - We used adaptive pooling over encoder to get a `14*14*512` vector from the encoder and then applied a linear layer with ReLu activation to get the attention weights. Note that we used the soft version of the attention. 
 
--  We used Adam's optimizer with learning rate of 0.002 which is annealed every 5 epochs. We used dropout with p = 0.5. The batch size used was 64 and the number of epochs were 100. The model was trained on GTX 1060 for 15 hours.
+-  We used Adam's optimizer with `learning rate of 0.002` which is annealed every 5 epochs. We used dropout with `p = 0.5`. The `batch size used was 64` and the `number of epochs were 100`. The model was trained on GTX 1060 for 15 hours.
 
 ## Results 
 
