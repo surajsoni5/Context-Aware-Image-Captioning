@@ -86,9 +86,9 @@ It can be seen that context aware captions gives more information about the imag
     - Images   : [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
     - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
 
-## Requirements and Dependencies
+## Requirements
 
-Kindly use the requirements.txt to set up your machine for replicating this project. some dependendecies are :
+Kindly use the requirements.txt to set up your machine for replicating this project, some dependencies are :
 ```
 h5py==2.9.0   
 matplotlib==3.0.3   
@@ -102,7 +102,7 @@ torchfile==0.1.0
 torchvision==0.2.1   
 tqdm==4.31.1  
 ```
-you can install these dependencies using `pip install requirements.txt`
+You can install these dependencies using `pip install -r requirements.txt`
 
 ## Setup 
 To train pure imsgr
