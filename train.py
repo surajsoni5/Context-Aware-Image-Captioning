@@ -26,7 +26,7 @@ train_loader = torch.utils.data.DataLoader(\
         # Note that the resize is already done in the encoder, so no need to do it here again
 if load:
 	# Load the model from checkpoints 
-	checkpoints=torch.load('checkpoint1')
+	checkpoints=torch.load('checkpoint_d')
 	encoder=checkpoints['encoder']
 	decoder=checkpoints['decoder']
 	decoder_optimizer=checkpoints['decoder_optimizer']
@@ -82,6 +82,6 @@ for epoch in range(epoch,numepochs):
 			'decoder': decoder,
 			'decoder_optimizer': decoder_optimizer
 			}
-	filename = 'checkpoint'+'1'
+	filename = 'checkpoint_d'
 	torch.save(state, filename)
 	##################################

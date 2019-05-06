@@ -68,7 +68,6 @@ def beam_search(encoder, decoder, image_path, beam_size):
 
         awe = decoder.attention(encoder_out, h)  # (s, encoder_dim), (s, num_pixels)
 
-        # alpha = alpha.view(-1, enc_image_size, enc_image_size)  # (s, enc_image_size, enc_image_size)
 
         gate = decoder.sigmoid(decoder.f_beta(h))  # gating scalar, (s, encoder_dim)
         awe = gate * awe
@@ -94,7 +93,7 @@ def beam_search(encoder, decoder, image_path, beam_size):
 
         # Add new words to sequences, alphas
         seqs = torch.cat([seqs[prev_word_inds], next_word_inds.unsqueeze(1)], dim=1)  # (s, step+1)
-        
+
         # Which sequences are incomplete (didn't reach <end>)?
         incomplete_inds = [ind for ind, next_word in enumerate(next_word_inds) if
                            next_word != end]
@@ -103,7 +102,6 @@ def beam_search(encoder, decoder, image_path, beam_size):
         # Set aside complete sequences
         if len(complete_inds) > 0:
             complete_seqs.extend(seqs[complete_inds].tolist())
-            # complete_seqs_alpha.extend(seqs_alpha[complete_inds].tolist())
             complete_seqs_scores.extend(top_k_scores[complete_inds])
         k -= len(complete_inds)  # reduce beam length accordingly
 
@@ -111,7 +109,6 @@ def beam_search(encoder, decoder, image_path, beam_size):
         if k == 0:
             break
         seqs = seqs[incomplete_inds]
-        # seqs_alpha = seqs_alpha[incomplete_inds]
         h = h[prev_word_inds[incomplete_inds]]
         c = c[prev_word_inds[incomplete_inds]]
         encoder_out = encoder_out[prev_word_inds[incomplete_inds]]
@@ -171,7 +168,6 @@ def beam_search_justify_main(encoder, decoder, image_path ,class_t ,class_d,lamb
     top_k_scores = torch.zeros(k, 1).to(device)  # (k, 1)
 
     # Tensor to store top k sequences' alphas; now they're just 1s
-    # seqs_alpha = torch.ones(k, 1, enc_image_size, enc_image_size).to(device)  # (k, 1, enc_image_size, enc_image_size)
 
     # Lists to store completed sequences, their alphas and scores
     complete_seqs = list()
@@ -191,7 +187,6 @@ def beam_search_justify_main(encoder, decoder, image_path ,class_t ,class_d,lamb
         awe_t = decoder.attention(encoder_out, h_t)  # (s, encoder_dim), (s, num_pixels)
         awe_d = decoder.attention(encoder_out, h_d)  # (s, encoder_dim), (s, num_pixels)
 
-        # alpha = alpha.view(-1, enc_image_size, enc_image_size)  # (s, enc_image_size, enc_image_size)
 
         gate_t = decoder.sigmoid(decoder.f_beta(h_t))  # gating scalar, (s, encoder_dim)
         awe_t = gate_t * awe_t
@@ -221,8 +216,6 @@ def beam_search_justify_main(encoder, decoder, image_path ,class_t ,class_d,lamb
 
         # Add new words to sequences, alphas
         seqs = torch.cat([seqs[prev_word_inds], next_word_inds.unsqueeze(1)], dim=1)  # (s, step+1)
-        # seqs_alpha = torch.cat([seqs_alpha[prev_word_inds], alpha[prev_word_inds].unsqueeze(1)],
-        #                        dim=1)  # (s, step+1, enc_image_size, enc_image_size)
         # Which sequences are incomplete (didn't reach <end>)?
         incomplete_inds = [ind for ind, next_word in enumerate(next_word_inds) if
                            next_word != end]
@@ -231,7 +224,6 @@ def beam_search_justify_main(encoder, decoder, image_path ,class_t ,class_d,lamb
         # Set aside complete sequences
         if len(complete_inds) > 0:
             complete_seqs.extend(seqs[complete_inds].tolist())
-            # complete_seqs_alpha.extend(seqs_alpha[complete_inds].tolist())
             complete_seqs_scores.extend(top_k_scores[complete_inds])
         k -= len(complete_inds)  # reduce beam length accordingly
 
@@ -239,7 +231,6 @@ def beam_search_justify_main(encoder, decoder, image_path ,class_t ,class_d,lamb
         if k == 0:
             break
         seqs = seqs[incomplete_inds]
-        # seqs_alpha = seqs_alpha[incomplete_inds]
         h_t = h_t[prev_word_inds[incomplete_inds]]
         c_t = c_t[prev_word_inds[incomplete_inds]]
 
@@ -386,7 +377,6 @@ def beam_search_discriminative(encoder, decoder, image_path_t,image_path_d,lambd
         if k == 0:
             break
         seqs = seqs[incomplete_inds]
-        # seqs_alpha = seqs_alpha[incomplete_inds]
 
         h_t = h_t[prev_word_inds[incomplete_inds]]
         c_t = c_t[prev_word_inds[incomplete_inds]]
@@ -412,7 +402,7 @@ def beam_search_discriminative(encoder, decoder, image_path_t,image_path_d,lambd
 
 if __name__ == "__main__":
     if sys.argv[1]=="c": ## Caption image_path 
-        checkpoints=torch.load('checkpoint1')
+        checkpoints=torch.load('checkpoint_d')
         encoder=checkpoints['encoder']
         decoder=checkpoints['decoder']
         encoder.eval()
@@ -425,7 +415,7 @@ if __name__ == "__main__":
             print(word_map[i].decode("utf-8") ,end=" ")
         print("")
     elif sys.argv[1]=="cj": ## cj Image_path target_class distractor class
-        checkpoints=torch.load('checkpoint_justify')
+        checkpoints=torch.load('checkpoint_j')
         encoder=checkpoints['encoder']
         decoder=checkpoints['decoder']
         encoder.eval()
@@ -438,7 +428,7 @@ if __name__ == "__main__":
             print(word_map[i].decode("utf-8") ,end=" ")
         print("")
     elif sys.argv[1]=="cd": ## cd Image_path_t Image_path_d
-        checkpoints=torch.load('checkpoint1')
+        checkpoints=torch.load('checkpoint_j')
         encoder=checkpoints['encoder']
         decoder=checkpoints['decoder']
         encoder.eval()
