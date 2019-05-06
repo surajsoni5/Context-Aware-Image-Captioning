@@ -13,7 +13,9 @@ We trained our model using generic **context-agnostic**  data (captions that des
 ## Dataset
 We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) dataset which contains images of birds and their descriptions. The dataset has 200 bird classes (species), each class has 30 images and each image has 10 descriptions. The descriptions are mostly about the morphology of the birds i.e., details about various parts of their body.
 
-<img src="birdlables.png" alt="Image" width="400" height="300" style="display: block; margin: 0 auto" />
+<p align="center">
+    <img src="birdlables.png" alt="Image" width="400" height="300" />
+</p>
  
 ## Implementation details 
 - ***Encoder:*** 
