@@ -30,51 +30,50 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 -  We used Adam's optimizer with `learning rate of 0.002` which is annealed every 5 epochs. We used dropout with `p = 0.5`. The `batch size used was 64` and the `number of epochs were 100`. The model was trained on GTX 1060 for 15 hours.
 
 ## Results 
+
 ### Context Agnostic Captioning 
 
 | Image| Context Agnostic Caption |
 |:---:|:---:|
-| ![](result_images/images_caption/Pied_Kingfisher_0002_71698.jpg)  | this bird has a white belly and breast with black superciliary and crown |
-| ![](result_images/images_caption/Laysan_Albatross_0049_918.jpg)  | this bird has a white head and breast with grey wings and a yellow beak |
-| ![](result_images/images_caption/Common_Yellowthroat_0015_190556.jpg)  | this bird has a yellow belly and breast with a black superciliary and gray crown |
-| ![](result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg)  | this bird has a white crown a white breast and grey wings with black edges |
-| ![](result_images/images_caption/Purple_Finch_0117_27427.jpg)  | this bird has a red crown a short bill and a red breast |
-| ![](result_images/images_caption/Pelagic_Cormorant_0012_23565.jpg)  | this bird has a long neck and a long bill |
-| ![](result_images/images_caption/Pied_Kingfisher_0004_72135.jpg)  | this bird has a long black bill and a black and white spotted body |
-| ![](result_images/images_caption/Long_Tailed_Jaeger_0005_797062.jpg)  | this bird has a black crown a white breast and a large wingspan |
-| ![](result_images/images_caption/Western_Grebe_0007_36074.jpg)  | this bird has a long yellow bill a black crown and red eyes |
-| ![](result_images/images_caption/Brewer_Sparrow_0008_796703.jpg)  | this bird has a white belly and breast with a brown crown and white wingbars |
+| <img src="result_images/images_caption/Pied_Kingfisher_0002_71698.jpg" width=350 height=350>   | this bird has a white belly and breast with black superciliary and crown |
+| <img src="result_images/images_caption/Laysan_Albatross_0049_918.jpg" width=350 height=350>   | this bird has a white head and breast with grey wings and a yellow beak |
+| <img src="result_images/images_caption/Common_Yellowthroat_0015_190556.jpg" width=350 height=350>   | this bird has a yellow belly and breast with a black superciliary and gray crown |
+| <img src="result_images/images_caption/Red_Legged_Kittiwake_0071_73800.jpg" width=350 height=350>   | this bird has a white crown a white breast and grey wings with black edges |
+| <img src="result_images/images_caption/Purple_Finch_0117_27427.jpg" width=350 height=350>   | this bird has a red crown a short bill and a red breast |
+| <img src="result_images/images_caption/Pelagic_Cormorant_0012_23565.jpg" width=350 height=350>   | this bird has a long neck and a long bill |
+| <img src="result_images/images_caption/Pied_Kingfisher_0004_72135.jpg" width=350 height=350>   | this bird has a long black bill and a black and white spotted body |
+| <img src="result_images/images_caption/Long_Tailed_Jaeger_0005_797062.jpg" width=350 height=350>   | this bird has a black crown a white breast and a large wingspan |
+| <img src="result_images/images_caption/Western_Grebe_0007_36074.jpg" width=350 height=350>   | this bird has a long yellow bill a black crown and red eyes |
+| <img src="result_images/images_caption/Brewer_Sparrow_0008_796703.jpg" width=350 height=350>   | this bird has a white belly and breast with a brown crown and white wingbars |
 
 ### Justification Captioning 
 
-| Image| Context Agnostic Caption |Target class  | distractor class  |   Caption |
+| Image| Target class  | distractor class  |   Caption | Context Agnostic Caption |
 |:---:|:---:|:---:|:---:|:---:|
-|![](result_images/images_justify/images/052_Pied_Billed_Grebe_0038_35798.jpg)  |  | ![](result_images/images_justify/classes/52.jpg) |![](result_images/images_justify/classes/53.jpg)   | this bird has a brown crown brown primaries and a brown throat | 
-|![](result_images/images_justify/images/193_Bewick_Wren_0060_185366.jpg)     |  | ![](result_images/images_justify/classes/193.jpg) |![](result_images/images_justify/classes/199.jpg)   | this bird has a white belly and breast with a brown crown and wing | 
-|![](result_images/images_justify/images/063_Ivory_Gull_0050_49245.jpg)       |  | ![](result_images/images_justify/classes/63.jpg) |![](result_images/images_justify/classes/60.jpg)   | this bird has a white crown as well as a black bill | 
-|![](result_images/images_justify/images/120_Fox_Sparrow_0135_115251.jpg)  |  | ![](result_images/images_justify/classes/120.jpg) |![](result_images/images_justify/classes/126.jpg)   | this bird has a brown crown brown primaries and a brown belly | 
-|![](result_images/images_justify/images/075_Green_Jay_0028_65719.jpg)  |  | ![](result_images/images_justify/classes/75.jpg) |![](result_images/images_justify/classes/74.jpg)   | this bird has a blue crown green primaries and a yellow belly | 
-|![](result_images/images_justify/images/170_Mourning_Warbler_0042_166493.jpg)  |  | ![](result_images/images_justify/classes/170.jpg) |![](result_images/images_justify/classes/171.jpg)   | this bird has a yellow belly and breast with a black neck and crown | 
-|![](result_images/images_justify/images/056_Pine_Grosbeak_0002_38214.jpg)  |  | ![](result_images/images_justify/classes/56.jpg) |![](result_images/images_justify/classes/57.jpg)   | this bird has a red crown red primaries and a red belly | 
-|![](result_images/images_justify/images/124_Le_Conte_Sparrow_0024_795190.jpg)  |  | ![](result_images/images_justify/classes/124.jpg) |![](result_images/images_justify/classes/118.jpg)   | this bird has a pointed yellow bill with a yellow breast | 
-|![](result_images/images_justify/images/182_Yellow_Warbler_0016_176452.jpg)  |  | ![](result_images/images_justify/classes/182.jpg) |![](result_images/images_justify/classes/159.jpg)   | this bird has a yellow crown a short bill and a yellow breast | 
-|![](result_images/images_justify/images/144_Common_Tern_0009_149609.jpg)  |  | ![](result_images/images_justify/classes/144.jpg) |![](result_images/images_justify/classes/142.jpg)   | this bird has a black crown white primaries and a white belly | 
+|<img src="result_images/images_justify/images/052_Pied_Billed_Grebe_0038_35798.jpg" width=350 height=350>   |  <img src="result_images/images_justify/classes/52.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/53.jpg" width=350 height=350>    | this bird has a brown crown brown primaries and a brown throat | 
+|<img src="result_images/images_justify/images/193_Bewick_Wren_0060_185366.jpg" width=350 height=350>      | <img src="result_images/images_justify/classes/193.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/199.jpg" width=350 height=350>    | this bird has a white belly and breast with a brown crown and wing | 
+|<img src="result_images/images_justify/images/063_Ivory_Gull_0050_49245.jpg" width=350 height=350>        |  <img src="result_images/images_justify/classes/63.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/60.jpg" width=350 height=350>    | this bird has a white crown as well as a black bill | 
+|<img src="result_images/images_justify/images/120_Fox_Sparrow_0135_115251.jpg" width=350 height=350>   |  <img src="result_images/images_justify/classes/120.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/126.jpg" width=350 height=350>    | this bird has a brown crown brown primaries and a brown belly | 
+|<img src="result_images/images_justify/images/075_Green_Jay_0028_65719.jpg" width=350 height=350>   |  <img src="result_images/images_justify/classes/75.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/74.jpg" width=350 height=350>    | this bird has a blue crown green primaries and a yellow belly | 
+|<img src="result_images/images_justify/images/170_Mourning_Warbler_0042_166493.jpg" width=350 height=350>   |   <img src="result_images/images_justify/classes/170.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/171.jpg" width=350 height=350>    | this bird has a yellow belly and breast with a black neck and crown | 
+|<img src="result_images/images_justify/images/056_Pine_Grosbeak_0002_38214.jpg" width=350 height=350>   |   <img src="result_images/images_justify/classes/56.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/57.jpg" width=350 height=350>    | this bird has a red crown red primaries and a red belly | 
+|<img src="result_images/images_justify/images/124_Le_Conte_Sparrow_0024_795190.jpg" width=350 height=350>   |   <img src="result_images/images_justify/classes/124.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/118.jpg" width=350 height=350>    | this bird has a pointed yellow bill with a yellow breast | 
+|<img src="result_images/images_justify/images/182_Yellow_Warbler_0016_176452.jpg" width=350 height=350>   |   <img src="result_images/images_justify/classes/182.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/159.jpg" width=350 height=350>    | this bird has a yellow crown a short bill and a yellow breast | 
+|<img src="result_images/images_justify/images/144_Common_Tern_0009_149609.jpg" width=350 height=350>   |   <img src="result_images/images_justify/classes/144.jpg" width=350 height=350>  |<img src="result_images/images_justify/classes/142.jpg" width=350 height=350>    | this bird has a black crown white primaries and a white belly | 
 
 ### Discriminative Captioning 
 
-| Target Image | Distractor Image | Caption | 
-|:--:|:--:|:--:|
-| ![](result_images/images_desc/image_target/Black_Footed_Albatross_0032_796115.jpg) | ![](result_images/images_desc/image_distractor/Laysan_Albatross_0047_619.jpg) | this bird is brown in color over all of its body except for its wings and tail that have white around them |
-| ![](result_images/images_desc/image_target/Sooty_Albatross_0054_796347.jpg) | ![](result_images/images_desc/image_distractor/Laysan_Albatross_0040_472.jpg) | this bird has wings that are gray and has a black tail and a black bill |
-| ![](result_images/images_desc/image_target/Black_Footed_Albatross_0038_212.jpg)  | ![](result_images/images_desc/image_distractor/Laysan_Albatross_0058_637.jpg) | this bird has a brown crown brown primaries and a brown throat |
-| ![](result_images/images_desc/image_target/Crested_Auklet_0010_794907.jpg)  | ![](result_images/images_desc/image_distractor/Least_Auklet_0014_1901.jpg) | this bird has webbed feet with a bright orange wide beak and jet black over the rest of its body |
-| ![](result_images/images_desc/image_target/Red_Winged_Blackbird_0024_4180.jpg) | ![](result_images/images_desc/image_distractor/Brewer_Blackbird_0064_2290.jpg) | this bird has blackhead and body but there is fins of feathers off of the wing that are black white and red |
-| ![](result_images/images_desc/image_target/Lazuli_Bunting_0030_14986.jpg) | ![](result_images/images_desc/image_distractor/Indigo_Bunting_0036_13716.jpg) | this bird has a white belly brown breast blue head and white wingbars |
-| ![](result_images/images_desc/image_target/Black_Billed_Cuckoo_0037_795330.jpg) | ![](result_images/images_desc/image_distractor/Yellow_Billed_Cuckoo_0018_26535.jpg) | a small brown bird with a white throat and red eyerings |
-| ![](result_images/images_desc/image_target/Yellow_Bellied_Flycatcher_0017_795490.jpg) | ![](result_images/images_desc/image_distractor/Scissor_Tailed_Flycatcher_0013_42024.jpg) | a small green bird with a yellow breast and yellow bill |
-| ![]( result_images/images_desc/image_target/Blue_Jay_0080_61617.jpg ) |  ![](result_images/images_desc/image_distractor/Florida_Jay_0009_64723.jpg) | this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices |
-
-
+| Target Image | Distractor Image | Caption | Context Agnostic Caption |
+|:--:|:--:|:--:|:--:|
+| <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0032_796115.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0047_619.jpg" width=350 height=350>  | this bird is brown in color over all of its body except for its wings and tail that have white around them | |
+| <img src="result_images/images_desc/image_target/Sooty_Albatross_0054_796347.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0040_472.jpg" width=350 height=350>  | this bird has wings that are gray and has a black tail and a black bill | |
+| <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0038_212.jpg" width=350 height=350>   | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0058_637.jpg" width=350 height=350>  | this bird has a brown crown brown primaries and a brown throat | |
+| <img src="result_images/images_desc/image_target/Crested_Auklet_0010_794907.jpg" width=350 height=350>   | <img src="result_images/images_desc/image_distractor/Least_Auklet_0014_1901.jpg" width=350 height=350>  | this bird has webbed feet with a bright orange wide beak and jet black over the rest of its body | |
+| <img src="result_images/images_desc/image_target/Red_Winged_Blackbird_0024_4180.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Brewer_Blackbird_0064_2290.jpg" width=350 height=350>  | this bird has blackhead and body but there is fins of feathers off of the wing that are black white and red | |
+| <img src="result_images/images_desc/image_target/Lazuli_Bunting_0030_14986.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Indigo_Bunting_0036_13716.jpg" width=350 height=350>  | this bird has a white belly brown breast blue head and white wingbars | |
+| <img src="result_images/images_desc/image_target/Black_Billed_Cuckoo_0037_795330.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Yellow_Billed_Cuckoo_0018_26535.jpg" width=350 height=350>  | a small brown bird with a white throat and red eyerings | |
+| <img src="result_images/images_desc/image_target/Yellow_Bellied_Flycatcher_0017_795490.jpg" width=350 height=350>  | <img src="result_images/images_desc/image_distractor/Scissor_Tailed_Flycatcher_0013_42024.jpg" width=350 height=350>  | a small green bird with a yellow breast and yellow bill | |
+| <img src=" result_images/images_desc/image_target/Blue_Jay_0080_61617.jpg" width=350 height=350> |  <img src="result_images/images_desc/image_distractor/Florida_Jay_0009_64723.jpg" width=350 height=350>  | this bird has a white belly and breast with blue wings a light gray eyebrow on the head of a front of black and white striped on the wings and bright pale blue rectrices | |
 
 
 
