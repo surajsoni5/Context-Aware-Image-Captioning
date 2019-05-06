@@ -62,7 +62,7 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 
 ### Discriminative Captioning 
 | Target Image | Distractor Image | Caption | 
-|:--:|:--:|:--:|
+|:--:+:--:+:--:|
 | <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0032_796115.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0047_619.jpg" width=175 height=175>  | this bird is brown in color over all of its body except for its wings and tail that have white around them | 
 | <img src="result_images/images_desc/image_target/Sooty_Albatross_0054_796347.jpg" width=175 height=175>  | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0040_472.jpg" width=175 height=175>  | this bird has wings that are gray and has a black tail and a black bill | 
 | <img src="result_images/images_desc/image_target/Black_Footed_Albatross_0038_212.jpg" width=175 height=175>   | <img src="result_images/images_desc/image_distractor/Laysan_Albatross_0058_637.jpg" width=175 height=175>  | this bird has a brown crown brown primaries and a brown throat | 
