@@ -8,7 +8,7 @@ this bird has a yellow belly and breast with a black superciliary and gray crown
 081.Pied_Kingfisher\Pied_Kingfisher_0004_72135.jpg
 this bird has a long black bill and a black and white spotted body <END>
 ----------------------------------------------------------------------------------------------------------------------------
-
+ 
 ----------------------------------------------------------------------------------------------------------------------------
 084.Red_legged_Kittiwake\Red_Legged_Kittiwake_0071_73800.jpg
 this bird has a white crown a white breast and grey wings with black edges <END>
