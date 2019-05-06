@@ -78,8 +78,8 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 <img src="https://latex.codecogs.com/png.latex?p=0.5" /> -->
 
 
-## Discussion 
-It can be seen that context aware captions gives more information about the image than context agnositic captions. 
+<!-- ## Discussion 
+It can be seen that context aware captions gives more information about the image than context agnositic captions.  -->
 ## References 
 1. Paper: [Context-aware Captions from Context-agnostic Supervision](https://arxiv.org/pdf/1701.02870.pdf)
 2. Dataset:
@@ -121,5 +121,5 @@ Download the pretrained models ![checkpoint_d](https://drive.google.com/open?id=
 3) Discrimination:
 ` python beamsearch.py cd target_image_path distractor_image_path `
 
-## Files and Folders 
+<!-- ## Files and Folders  -->
 
