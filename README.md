@@ -48,8 +48,6 @@ We have used the [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-
 
 ### Justification Captioning 
 
-### Justification Captioning 
-
 
 | Image| Target class  | distractor class  |   Caption |
 |:---:|:---:|:---:|:---:|
