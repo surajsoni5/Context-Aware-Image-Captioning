@@ -88,19 +88,23 @@ It can be seen that context aware captions gives more information about the imag
     - Captions :  [Reed et al.](https://arxiv.org/abs/1605.05395) 
 
 ## Requirements and Dependencies
+
+Kindly use the requirements.txt to set up your machine for replicating this project. some dependendecies are :
 ```
-h5py          2.9.0   
-matplotlib    3.0.3   
-nltk          3.4.1     
-numpy         1.16.2  
-pandas        0.24.2  
-pillow        5.3.0     
-python        3.7.3   
-pytorch       1.0.0   
-torchfile     0.1.0   
-torchvision   0.2.1   
-tqdm          4.31.1  
+h5py==2.9.0   
+matplotlib==3.0.3   
+nltk==3.4.1     
+numpy==1.16.2  
+pandas==0.24.2  
+pillow==5.3.0     
+python==3.7.3   
+pytorch==1.0.0   
+torchfile==0.1.0   
+torchvision==0.2.1   
+tqdm==4.31.1  
 ```
+you can install these dependencies using `pip install requirements.txt`
+
 ## Setup 
 To train pure imsgr
 
